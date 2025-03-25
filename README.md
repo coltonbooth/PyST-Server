@@ -1,3 +1,28 @@
+# SensorThings API Server Overview
+
+This server is an implementation of the **SensorThings API** using [FastAPI](https://fastapi.tiangolo.com/). It provides endpoints to manage and interact with both sensing and tasking aspects of IoT systems. The API is divided into two main sections: **Sensing** and **Tasking**.
+
+## Sensing Endpoints
+
+The Sensing endpoints allow clients to create, retrieve, and list various sensor-related resources such as:
+- **Things**: Represent physical objects or entities.
+- **Locations**: Specify geographical positions or areas.
+- **Sensors**: Capture sensor metadata and information.
+- **Observed Properties**: Define the properties being observed (e.g., temperature, humidity).
+- **Datastreams**: Link Things, Sensors, and Observed Properties together to create data streams.
+- **Observations**: Store sensor measurements with timestamps.
+- **Features of Interest**: Provide context to observed data by defining specific areas or regions.
+
+## Tasking Endpoints
+
+The Tasking endpoints enable control of devices and include:
+- **Actuators**: Devices that perform actions.
+- **Tasking Capabilities**: Define the actions an actuator can perform.
+- **Tasks**: Commands to be executed by actuators.
+
+## Implementation Details
+
+The server uses in-memory dictionaries for storage and Pydantic models for data validation. It implements basic error handling with FastAPI's HTTPException to ensure robust API interactions. This lightweight server serves as a demonstration of the SensorThings API and can be extended for production use.
 ---
 # cURL Commands for SensorThings API
 ---
