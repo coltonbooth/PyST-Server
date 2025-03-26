@@ -24,7 +24,7 @@ The Tasking endpoints enable control of devices and include:
 
 The server uses in-memory dictionaries for storage and Pydantic models for data validation. It implements basic error handling with FastAPI's HTTPException to ensure robust API interactions. This lightweight server serves as a demonstration of the SensorThings API and can be extended for production use.
 
-# SensorThings API Server Wishlist
+# Wishlist
 
 Below is a list of potential improvements to enhance the SensorThings API Server implementation:
 
@@ -55,7 +55,7 @@ Below is a list of potential improvements to enhance the SensorThings API Server
 - **Security Enhancements**:  
   Incorporate best practices such as HTTPS, rate limiting, and input sanitization to safeguard the API against common vulnerabilities.
 
-  
+
 ---
 # cURL Commands for SensorThings API
 ---
